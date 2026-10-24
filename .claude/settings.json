@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && python3 scripts/check_resume.py --stop-hook",
+            "timeout": 300,
+            "statusMessage": "Checking modified resumes..."
+          }
+        ]
+      }
+    ]
+  }
+}

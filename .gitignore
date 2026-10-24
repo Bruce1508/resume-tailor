@@ -1,0 +1,21 @@
+# Your personal data stays local. If your fork is PRIVATE you may remove these lines.
+profile/
+resume.tex
+resume.pdf
+applications/
+jd_keywords.txt
+
+# Build output
+*.pdf
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+
+# Local agent state
+.claude/settings.local.json
+.claude/.check_cache.json
+.DS_Store
+__pycache__/
