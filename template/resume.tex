@@ -1,0 +1,167 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Alex Chen Resume}, pdfauthor={Alex Chen}}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.1pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in, topsep=4pt, itemsep=1pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+\newcommand{\resumeProjectItemListStart}{\begin{itemize}[leftmargin=0.22in, topsep=3pt, itemsep=2pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeProjectItemListEnd}{\end{itemize}\vspace{5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% Alex Chen is a FICTIONAL sample. /setup replaces everything below with your own facts.
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Alex Chen} \\ \vspace{1pt}
+    \small City, ST $|$ 555-010-0000 $|$
+    \href{mailto:alex.chen@example.com}{\underline{alex.chen@example.com}} $|$
+    \href{https://www.linkedin.com/in/example}{\underline{linkedin.com/in/example}} $|$
+    \href{https://github.com/example}{\underline{github.com/example}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {Software Engineer Intern}{May 2025 -- August 2025}
+      {Example Logistics Co.}{City, ST}
+      \resumeItemListStart
+        \resumeItem{Cut order lookup latency from \textbf{1.2 s to 180 ms} by adding \textbf{PostgreSQL} indexes and a \textbf{Redis} cache to a \textbf{Node.js} REST API used by \textbf{3 internal teams}}
+        \resumeItem{Eliminated \textbf{4 hours of weekly manual reporting} by automating CSV exports with a scheduled \textbf{Python} job in \textbf{GitHub Actions}}
+        \resumeItem{Raised shipment service test coverage from \textbf{41\% to 78\%} by writing \textbf{120 Jest tests} and blocking merges that fail CI}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{StudyQueue} $|$ \emph{TypeScript / React / Firebase} $|$ \href{https://github.com/example/studyqueue}{\emph{\underline{GitHub}}}}{}
+      \resumeProjectItemListStart
+        \resumeItem{Reached \textbf{250 weekly active students} by shipping a \textbf{React} study-room scheduler with real-time seat updates in \textbf{Firebase}}
+        \resumeItem{Reduced page load from \textbf{3.4 s to 1.1 s} by code-splitting routes and lazy-loading images}
+      \resumeProjectItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Example University}{September 2023 -- May 2027}
+      {Bachelor of Science in Computer Science}{City, ST}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, topsep=4pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, SQL, Java} \\[2pt]
+     \textbf{Frameworks \& Testing}{: React, Node.js, Express, Jest, GitHub Actions} \\[2pt]
+     \textbf{Data \& Tools}{: PostgreSQL, Redis, Firebase, Docker, Git}
+    }}
+ \end{itemize}
+
+\end{document}
