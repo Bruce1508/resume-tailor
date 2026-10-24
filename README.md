@@ -60,21 +60,16 @@ flowchart TD
     B --> D
     C --> D
 
-    D["/tailor + job description"] --> S1
-    subgraph PIPELINE ["Six-step tailoring pipeline"]
-        direction TB
-        S1["1 · Keyword Extraction"] --> S2["2 · ATS Match & Gap Analysis"]
-        S2 -. "⏸ STOP — human approval required" .-> S3["3 · Impact Bullet Rewrite"]
-        S3 --> S4["4 · ATS + Recruiter Pass"]
-        S4 --> S5["5 · Final Keyword Polish"]
-        S5 --> S6["6 · Verify & Build"]
-    end
-
+    D["/tailor + job description"] --> S1["1 · Keyword Extraction"]
+    S1 --> S2["2 · ATS Match & Gap Analysis"]
+    S2 -.->|"STOP — human approval"| S3["3 · Impact Bullet Rewrite"]
+    S3 --> S4["4 · ATS + Recruiter Pass"]
+    S4 --> S5["5 · Final Keyword Polish"]
+    S5 --> S6["6 · Verify & Build"]
     S6 --> E["scripts/check_resume.py"]
-    E -->|0 FAIL| F(["resume.pdf"])
-    E -->|any FAIL| S3
+    E -->|"0 FAIL"| F(["resume.pdf"])
+    E -.->|"any FAIL"| S3
 
-    style PIPELINE fill:#f8f7ff,stroke:#6b4fbb,stroke-width:1px
     style E fill:#fff4e5,stroke:#d97706,stroke-width:1.5px
     style F fill:#e8f8ee,stroke:#16a34a,stroke-width:1.5px
 ```
@@ -128,42 +123,6 @@ No LaTeX locally? Paste `resume.tex` into [Overleaf](https://www.overleaf.com/) 
 you'll lose the automated checker, so run it on your own machine before submitting.
 
 ## Repository layout
-
-```mermaid
-flowchart LR
-    subgraph instructions ["📜 Agent instructions (read by every agent)"]
-        AGENTS["AGENTS.md"]
-        CLAUDE["CLAUDE.md"]
-        GEMINI[".gemini/settings.json"]
-    end
-    subgraph commands ["⚡ Slash commands (Claude Code)"]
-        SETUP[".claude/commands/setup.md"]
-        TAILOR[".claude/commands/tailor.md"]
-        HOOK[".claude/settings.json<br/><sub>Stop hook</sub>"]
-    end
-    subgraph yours ["🔒 Your data — gitignored, stays local"]
-        FACTS["profile/facts.md"]
-        NEVER["profile/never_claim.md"]
-        RESUME["resume.tex / resume.pdf"]
-        APPS["applications/&lt;Company&gt;/"]
-        HIST["tailoring_history.md"]
-    end
-    subgraph shared ["🌐 Checked into git"]
-        TEMPLATE["template/resume.tex<br/><sub>Jake-style LaTeX, sample data</sub>"]
-        EXAMPLE["profile.example/<br/><sub>fictional sample to copy from</sub>"]
-        SCRIPT["scripts/check_resume.py"]
-    end
-
-    CLAUDE -.-> AGENTS
-    GEMINI -.-> AGENTS
-    SETUP --> AGENTS
-    TAILOR --> AGENTS
-    EXAMPLE -. "copy as starting point" .-> FACTS
-    EXAMPLE -. "copy as starting point" .-> NEVER
-    TEMPLATE -. "copy as starting point" .-> RESUME
-    HOOK --> SCRIPT
-    SCRIPT -. "checks" .-> RESUME
-```
 
 | Path | Tracked in git? | Purpose |
 |---|---|---|
