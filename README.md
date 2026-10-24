@@ -11,6 +11,8 @@ minutes — with every claim traceable to a fact you can defend in an interview.
 [![AGENTS.md](https://img.shields.io/badge/agent--instructions-AGENTS.md-blue)](AGENTS.md)
 [![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Gemini%20CLI%20%7C%20Cursor-6b4fbb)](#compatible-agents)
 
+<img src="docs/assets/hero.webp" alt="A split desk: an ad-hoc chat-and-document workflow on the left, a repository-based LaTeX resume workflow on the right" width="100%">
+
 </div>
 
 ---
@@ -76,10 +78,6 @@ flowchart TD
     style E fill:#fff4e5,stroke:#d97706,stroke-width:1.5px
     style F fill:#e8f8ee,stroke:#16a34a,stroke-width:1.5px
 ```
-
-<p align="center">
-  <img src="docs/assets/quality-gate.svg" alt="resume.tex flows through check_resume.py, which audits PDF format, layout, reading order, links, never-claim terms, and keyword placement before a FAIL-free build" width="100%">
-</p>
 
 <p align="center">
   <img src="docs/assets/quality-gate.svg" alt="resume.tex flows through check_resume.py, which audits PDF format, layout, reading order, links, never-claim terms, and keyword placement before a FAIL-free build" width="100%">
