@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ad-hoc resume prompting compared with this repository workflow</title>
+  <desc id="desc">A typical copy-paste loop keeps context in a chat and requires manual formatting and checking. This repository keeps verified facts, requires approval before editing, builds from LaTeX, runs mechanical checks, and saves an application snapshot.</desc>
+  <rect width="1600" height="900" rx="32" fill="#0d0d0c"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="88" y="80" fill="#aaa39a" font-size="20" letter-spacing="7">TWO WAYS TO TAILOR</text>
+    <text x="88" y="151" fill="#f3efe7" font-size="48" font-weight="700">A prompt writes.</text>
+    <text x="516" y="151" fill="#76d6f2" font-size="48" font-weight="700">A workflow</text>
+    <text x="819" y="151" fill="#b995ff" font-size="48" font-weight="700">proves.</text>
+
+    <rect x="88" y="207" width="668" height="582" rx="24" fill="#171715" stroke="#34332f" stroke-width="2"/>
+    <rect x="844" y="207" width="668" height="582" rx="24" fill="#171715" stroke="#76d6f2" stroke-width="2"/>
+
+    <text x="132" y="258" fill="#e8b55c" font-size="18" letter-spacing="5">TYPICAL AD-HOC LOOP</text>
+    <text x="888" y="258" fill="#76d6f2" font-size="18" letter-spacing="5">THIS REPOSITORY</text>
+
+    <text x="132" y="314" fill="#f3efe7" font-size="32" font-weight="700">Chat + document editor</text>
+    <text x="888" y="314" fill="#f3efe7" font-size="32" font-weight="700">Facts + approval + checks</text>
+
+    <g font-size="18">
+      <g>
+        <circle cx="153" cy="373" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="380" fill="#e8b55c" text-anchor="middle" font-weight="700">1</text>
+        <text x="196" y="380" fill="#f3efe7">Paste the job description</text>
+
+        <circle cx="153" cy="439" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="446" fill="#e8b55c" text-anchor="middle" font-weight="700">2</text>
+        <text x="196" y="446" fill="#f3efe7">Paste the current resume</text>
+
+        <circle cx="153" cy="505" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="512" fill="#e8b55c" text-anchor="middle" font-weight="700">3</text>
+        <text x="196" y="512" fill="#f3efe7">Ask for a rewrite</text>
+
+        <circle cx="153" cy="571" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="578" fill="#e8b55c" text-anchor="middle" font-weight="700">4</text>
+        <text x="196" y="578" fill="#f3efe7">Copy the output back</text>
+
+        <circle cx="153" cy="637" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="644" fill="#e8b55c" text-anchor="middle" font-weight="700">5</text>
+        <text x="196" y="644" fill="#f3efe7">Repair layout by hand</text>
+
+        <circle cx="153" cy="703" r="21" fill="#171715" stroke="#e8b55c"/>
+        <text x="153" y="710" fill="#e8b55c" text-anchor="middle" font-weight="700">6</text>
+        <text x="196" y="710" fill="#f3efe7">Export and spot-check</text>
+
+        <path d="M153 395V417 M153 461V483 M153 527V549 M153 593V615 M153 659V681" stroke="#34332f" stroke-width="2"/>
+      </g>
+
+      <g>
+        <circle cx="909" cy="373" r="21" fill="#171715" stroke="#76d6f2"/>
+        <text x="909" y="380" fill="#76d6f2" text-anchor="middle" font-weight="700">1</text>
+        <text x="952" y="380" fill="#f3efe7">Ground claims in</text>
+        <text x="1134" y="380" fill="#76d6f2">resume_facts.md</text>
+
+        <circle cx="909" cy="439" r="21" fill="#171715" stroke="#76d6f2"/>
+        <text x="909" y="446" fill="#76d6f2" text-anchor="middle" font-weight="700">2</text>
+        <text x="952" y="446" fill="#f3efe7">Analyze keywords and gaps</text>
+
+        <circle cx="909" cy="505" r="21" fill="#171715" stroke="#b995ff"/>
+        <text x="909" y="512" fill="#b995ff" text-anchor="middle" font-weight="700">3</text>
+        <text x="952" y="512" fill="#b995ff" font-weight="700">You approve the edit plan</text>
+
+        <circle cx="909" cy="571" r="21" fill="#171715" stroke="#76d6f2"/>
+        <text x="909" y="578" fill="#76d6f2" text-anchor="middle" font-weight="700">4</text>
+        <text x="952" y="578" fill="#f3efe7">Agent edits</text>
+        <text x="1086" y="578" fill="#76d6f2">main.tex</text>
+
+        <circle cx="909" cy="637" r="21" fill="#171715" stroke="#76d6f2"/>
+        <text x="909" y="644" fill="#76d6f2" text-anchor="middle" font-weight="700">5</text>
+        <text x="952" y="644" fill="#f3efe7">Build and run mechanical checks</text>
+
+        <circle cx="909" cy="703" r="21" fill="#171715" stroke="#76d6f2"/>
+        <text x="909" y="710" fill="#76d6f2" text-anchor="middle" font-weight="700">6</text>
+        <text x="952" y="710" fill="#f3efe7">Save the application snapshot</text>
+
+        <path d="M909 395V417 M909 461V483" stroke="#34332f" stroke-width="2"/>
+        <path d="M909 527V549" stroke="#34332f" stroke-width="2"/>
+        <path d="M909 593V615 M909 659V681" stroke="#34332f" stroke-width="2"/>
+      </g>
+    </g>
+
+    <text x="132" y="755" fill="#aaa39a" font-size="16">Context lives in the conversation.</text>
+    <text x="888" y="755" fill="#aaa39a" font-size="16">Evidence and decisions stay in the repository.</text>
+
+    <text x="800" y="846" fill="#aaa39a" font-size="18" text-anchor="middle">Same goal. Different control system.</text>
+  </g>
+</svg>

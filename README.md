@@ -35,6 +35,14 @@ checker script that make fabrication *structurally harder than honesty*:
   recruiter eye-tracking "hot zone." The agent cannot claim "done" if the script says
   otherwise.
 
+A chat keeps context in the conversation. This template keeps evidence and decisions in
+files you can inspect, diff, and reuse. It does not guarantee a job or an ATS score; it
+gives the tailoring process a source of truth and a quality gate.
+
+<p align="center">
+  <img src="docs/assets/manual-vs-workflow.svg" alt="A typical chat-and-document loop compared with this repository's fact, approval, editing, checking, and snapshot workflow" width="100%">
+</p>
+
 <div align="center">
 <img src="docs/sample-preview.png" alt="Sample tailored resume output" width="620">
 
@@ -68,6 +76,14 @@ flowchart TD
     style E fill:#fff4e5,stroke:#d97706,stroke-width:1.5px
     style F fill:#e8f8ee,stroke:#16a34a,stroke-width:1.5px
 ```
+
+<p align="center">
+  <img src="docs/assets/quality-gate.svg" alt="resume.tex flows through check_resume.py, which audits PDF format, layout, reading order, links, never-claim terms, and keyword placement before a FAIL-free build" width="100%">
+</p>
+
+<p align="center">
+  <img src="docs/assets/quality-gate.svg" alt="resume.tex flows through check_resume.py, which audits PDF format, layout, reading order, links, never-claim terms, and keyword placement before a FAIL-free build" width="100%">
+</p>
 
 The checker isn't advisory — it's wired into a **Claude Code `Stop` hook**
 (`.claude/settings.json`). Whenever `resume.tex` changes, the agent's turn is blocked

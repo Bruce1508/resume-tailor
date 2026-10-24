@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Mechanical quality gate for the generated resume PDF</title>
+  <desc id="desc">The LaTeX source runs through check_resume.py, which builds the PDF and checks page format, layout warnings, reading order, bullet length, links, configured banned terms, and job keyword placement. A resume is ready only when failures are zero and warnings are fixed or explained.</desc>
+  <rect width="1600" height="760" rx="32" fill="#0d0d0c"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="88" y="80" fill="#aaa39a" font-size="20" letter-spacing="7">MECHANICAL QUALITY GATE</text>
+    <text x="88" y="151" fill="#f3efe7" font-size="48" font-weight="700">The PDF does not ship on vibes.</text>
+    <text x="88" y="194" fill="#aaa39a" font-size="18">One local command builds the document and reports what a visual skim can miss.</text>
+
+    <rect x="88" y="247" width="450" height="385" rx="24" fill="#171715" stroke="#34332f" stroke-width="2"/>
+    <rect x="575" y="247" width="450" height="385" rx="24" fill="#171715" stroke="#76d6f2" stroke-width="2"/>
+    <rect x="1062" y="247" width="450" height="385" rx="24" fill="#171715" stroke="#34332f" stroke-width="2"/>
+
+    <text x="128" y="298" fill="#e8b55c" font-size="18" letter-spacing="4">SOURCE</text>
+    <text x="615" y="298" fill="#76d6f2" font-size="18" letter-spacing="4">CHECK</text>
+    <text x="1102" y="298" fill="#b995ff" font-size="18" letter-spacing="4">SHIP CONDITION</text>
+
+    <text x="128" y="363" fill="#f3efe7" font-size="32" font-weight="700">main.tex</text>
+    <text x="128" y="406" fill="#aaa39a" font-size="16">One editable source</text>
+    <text x="128" y="435" fill="#aaa39a" font-size="16">for content and layout.</text>
+
+    <rect x="128" y="490" width="370" height="88" rx="12" fill="#0d0d0c" stroke="#34332f"/>
+    <text x="152" y="526" fill="#76d6f2" font-size="16">$ python3 scripts/</text>
+    <text x="152" y="553" fill="#f3efe7" font-size="16">  check_resume.py main.tex</text>
+
+    <g font-size="16">
+      <text x="615" y="351" fill="#f3efe7">✓ 1 page · US Letter</text>
+      <text x="615" y="392" fill="#f3efe7">✓ 0 layout warnings</text>
+      <text x="615" y="433" fill="#f3efe7">✓ sections read in order</text>
+      <text x="615" y="474" fill="#f3efe7">✓ bullets stay within limit</text>
+      <text x="615" y="515" fill="#f3efe7">✓ links remain clickable</text>
+      <text x="615" y="556" fill="#f3efe7">✓ configured terms absent</text>
+      <text x="615" y="597" fill="#f3efe7">✓ JD keywords reported</text>
+    </g>
+
+    <text x="1102" y="367" fill="#f3efe7" font-size="48" font-weight="700">0 FAIL</text>
+    <text x="1102" y="413" fill="#b995ff" font-size="20" font-weight="700">WARNINGS FIXED</text>
+    <text x="1102" y="442" fill="#b995ff" font-size="20" font-weight="700">OR EXPLAINED</text>
+
+    <line x1="1102" y1="487" x2="1468" y2="487" stroke="#34332f" stroke-width="2"/>
+    <text x="1102" y="529" fill="#aaa39a" font-size="16">Then save the company-specific</text>
+    <text x="1102" y="558" fill="#aaa39a" font-size="16">.tex and .pdf under</text>
+    <text x="1102" y="594" fill="#76d6f2" font-size="18">applications/</text>
+
+    <path d="M538 440H565" stroke="#aaa39a" stroke-width="3"/>
+    <path d="M555 431L565 440L555 449" fill="none" stroke="#aaa39a" stroke-width="3"/>
+    <path d="M1025 440H1052" stroke="#aaa39a" stroke-width="3"/>
+    <path d="M1042 431L1052 440L1042 449" fill="none" stroke="#aaa39a" stroke-width="3"/>
+
+    <text x="800" y="698" fill="#aaa39a" font-size="16" text-anchor="middle">The checker catches formatting and rule violations. Human review still owns truth and judgment.</text>
+  </g>
+</svg>
