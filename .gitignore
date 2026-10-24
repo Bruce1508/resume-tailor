@@ -1,9 +1,10 @@
 # Your personal data stays local. If your fork is PRIVATE you may remove these lines.
-profile/
-resume.tex
-resume.pdf
-applications/
-jd_keywords.txt
+# Anchored to repo root (leading /) so they don't also match template/resume.tex.
+/profile/
+/resume.tex
+/resume.pdf
+/applications/
+/jd_keywords.txt
 
 # Build output
 *.pdf
