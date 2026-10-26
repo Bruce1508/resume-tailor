@@ -9,7 +9,7 @@
 [![AGENTS.md](https://img.shields.io/badge/agent--instructions-AGENTS.md-blue)](AGENTS.md)
 [![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Gemini%20CLI%20%7C%20Cursor-6b4fbb)](#compatible-agents)
 
-<img src="docs/assets/hero.webp" alt="A split desk: an ad-hoc chat-and-document workflow on the left, a repository-based LaTeX resume workflow on the right" width="100%">
+<img src="docs/assets/hero.webp" alt="Google Docs resume editing on the left compared with an AI coding agent editing resume files and checking a PDF on the right" width="100%">
 
 [Features](#features) · [Quick start](#quick-start) · [Usage](#usage) · [Checker](#what-the-checker-catches) · [Contributing](#contributing)
 
