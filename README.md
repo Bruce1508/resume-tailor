@@ -46,7 +46,7 @@ gives the tailoring process a source of truth and a quality gate.
 </p>
 
 <div align="center">
-<img src="docs/sample-preview.png" alt="Sample tailored resume output" width="620">
+<img src="docs/sample-preview.png" alt="Full-page fictional resume sample showing two experience entries, three projects, education, and technical skills" width="100%">
 
 <sub>The fictional sample this repo ships with — rendered from <code>template/resume.tex</code>, checked at 0 FAIL / 0 WARN</sub>
 </div>
