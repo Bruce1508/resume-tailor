@@ -53,26 +53,13 @@ gives the tailoring process a source of truth and a quality gate.
 
 ## How it works
 
-```mermaid
-flowchart TD
-    A["/setup<br/><sub>once, interview-driven</sub>"] --> B["profile/facts.md<br/><sub>verified · confirmed · estimate</sub>"]
-    A --> C["profile/never_claim.md<br/><sub>blocked technologies</sub>"]
-    B --> D
-    C --> D
-
-    D["/tailor + job description"] --> S1["1 · Keyword Extraction"]
-    S1 --> S2["2 · ATS Match & Gap Analysis"]
-    S2 -.->|"STOP — human approval"| S3["3 · Impact Bullet Rewrite"]
-    S3 --> S4["4 · ATS + Recruiter Pass"]
-    S4 --> S5["5 · Final Keyword Polish"]
-    S5 --> S6["6 · Verify & Build"]
-    S6 --> E["scripts/check_resume.py"]
-    E -->|"0 FAIL"| F(["resume.pdf"])
-    E -.->|"any FAIL"| S3
-
-    style E fill:#fff4e5,stroke:#d97706,stroke-width:1.5px
-    style F fill:#e8f8ee,stroke:#16a34a,stroke-width:1.5px
-```
+Run `/setup` once to build `profile/facts.md` (tagged `verified` / `confirmed` /
+`estimate`) and `profile/never_claim.md` (blocked technologies). Then for every job
+description, run `/tailor` and the agent works through six steps: keyword extraction,
+ATS match & gap analysis (stop here for your approval), impact-bullet rewrite, ATS +
+recruiter pass, final keyword polish, and verify & build. The last step runs
+`scripts/check_resume.py` against `resume.tex` — 0 FAIL produces `resume.pdf`; any FAIL
+sends the agent back to rewrite.
 
 <p align="center">
   <img src="docs/assets/quality-gate.svg" alt="resume.tex flows through check_resume.py, which audits PDF format, layout, reading order, links, never-claim terms, and keyword placement before a FAIL-free build" width="100%">
