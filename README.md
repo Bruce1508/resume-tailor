@@ -11,7 +11,7 @@ minutes — with every claim traceable to a fact you can defend in an interview.
 [![AGENTS.md](https://img.shields.io/badge/agent--instructions-AGENTS.md-blue)](AGENTS.md)
 [![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Gemini%20CLI%20%7C%20Cursor-6b4fbb)](#compatible-agents)
 
-<img src="docs/assets/hero.webp" alt="A split desk: an ad-hoc chat-and-document workflow on the left, a repository-based LaTeX resume workflow on the right" width="100%">
+<img src="docs/assets/hero.webp" alt="Google Docs resume editing on the left compared with an AI coding agent editing resume files and checking a PDF on the right" width="100%">
 
 </div>
 
@@ -179,7 +179,8 @@ through whatever coding agent you point at this folder.
 
 LaTeX base template adapted from [sb2nov/resume](https://github.com/sb2nov/resume) via
 Jake Gutierrez's well-known fork. The tailoring methodology and checker script are
-original to this repo.
+original to this repo. The hero is an AI-generated interface mockup, not a screenshot
+of an actual Google Docs or coding-agent session.
 
 ## License
 
